@@ -1,0 +1,171 @@
+/* Default Styles*/
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  height: 250px;
+  max-width: 100%;
+  border-bottom: 8px solid #D3D3D3;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 0;
+}
+
+.logo img {
+  width: 175px;
+  height: 175px;
+  margin-right: 0;
+}
+
+.header .name {
+  padding-right: 40px;
+}
+
+/* Text */
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  font-family: courier;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: courier;
+}
+
+p {
+  font-weight: normal;
+  font-family: "Helvetica";
+}
+
+/* Main Picture */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  max-width: 100%;
+}
+
+.main img{
+  max-width: 100%;
+}
+
+/* Pictures */
+
+.work {
+  font-size: 40px;
+  color: grey;
+  padding-left: 2rem;
+}
+
+.leaf-desc {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.leaf {
+  width: 30%;
+}
+
+.fern {
+  width: 30%;
+}
+
+.water {
+  width: 30%;
+}
+
+.leaf-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 3rem;
+}
+
+.leaf-image img {
+  max-width: 15rem;
+}
+
+/* Breakpoint at 450px */
+
+@media only screen and (max-width: 360px){
+  .pics {
+    flex-wrap: wrap;
+  }
+
+  .leaf-desc {
+    text-align: center;
+  }
+
+  .leaf {
+    width: 90%;
+    margin: 2rem 2rem;
+  }
+
+  .fern {
+    width: 90%;
+    margin: 2rem 2rem;
+  }
+
+  .water {
+    width: 90%;
+    margin: 2rem 2rem;
+  }
+}
+
+/* Breakpoint at 760px */
+
+@media only screen and (max-width: 768px){
+  .pics {
+    flex-wrap: wrap;
+  }
+
+  .leaf-desc {
+    text-align: center;
+  }
+
+  .leaf {
+    width: 95%;
+    margin: 2rem 2rem;
+  }
+
+  .fern {
+    width: 95%;
+    margin: 2rem 2rem;
+  }
+
+  .water {
+    width: 95%;
+    margin: 2rem 2rem;
+  }
+}
